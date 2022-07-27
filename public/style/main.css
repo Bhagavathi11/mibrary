@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+}
+header{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index:200;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid #d2dcec;
+}
+.backgroundimg{
+    
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-attachment: fixed;
+        background-image: url("../image/reading-concept-with-hands.jpg");
+    
+}
+.nav-item {
+ font-size: 20px;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+
+.section{
+    background: url(../image/search.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    background-attachment: fixed;
+ 
+}
+
+ h2{
+text-align: center;
+padding-top: 80px;
+font-size: 45px;
+font-weight: 700;
+color: #fdfdfe;
+text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+  0px 0px 20px #b393d3;
+}
+.pd{
+    padding-top: 80px;
+}
+.card{
+    box-shadow: 10px 15px 15px rgba(140, 172, 226, 0.3),
+   inset 4px 4px 10px white;
+  
+  
+ 
+   overflow: hidden;
+ 
+}
+.card:hover{
+  
+   
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+    inset -4px -4px 10px white;
+    transition: .2s; 
+}
+
+footer{
+    height: 50px;
+}
+
+.filepond--root{
+    max-height: 100px;
+   
+}
+
+.filepond--item{
+    width: calc(15% - 0.2em);
+}
+

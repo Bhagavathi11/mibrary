@@ -1,0 +1,20 @@
+<div class="section">
+    <h2>Edit Book</h2>
+  
+    <div class="container pd">
+  
+      <div class="card border-primary mb-3 mx-auto" style="max-width: 30rem;">
+        
+  
+          <div class="card-body text-primary">
+            <form action="/books/<%=book.id%>?_method=PUT" method="POST">
+                <%- include('_form_fields') %>
+                <a href="/books">Cancel</a>
+                <button type="submit">Update</button>
+            </form>
+          </div>
+
+      </div>
+      
+    </div>
+</div>

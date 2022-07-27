@@ -1,0 +1,19 @@
+<div class="section ">
+    <h2>Edit Authors</h2>
+  
+  <div class="container pd">
+  
+      <div class="card border-primary mb-3 mx-auto" style="max-width: 30rem;">
+        
+        <div class="card-body text-primary">
+            
+            <form action="/authors/<%=author.id%>?_method=PUT" method="POST">
+                <%- include('_form_fields') %>
+                <a href="/authors/<%=author.id%>" class="btn btn-primary">Cancel</a>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+         
+        </div>
+      </div>
+  </div>
+  </div>

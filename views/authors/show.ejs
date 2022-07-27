@@ -1,0 +1,26 @@
+
+
+
+<div class="section ">
+    <h2>Edit Authors</h2>
+  
+  <div class="container pd">
+  
+      <div class="card border-primary mb-3 mx-auto" style="max-width: 30rem;">
+        
+  
+        <div class="card-body text-primary">
+            <h2><%=author.name%></h2>
+            <a href="/authors/<%=author.id%>/edit" class="btn btn-primary">Edit</a> 
+            <%- include('../partials/deleteForm',{url:`/authors/${author.id}`}) %>
+            <% if(booksByAuthor.length > 0){%>
+                    <h2>Book By Author</h2>
+                    <%booksByAuthor.forEach(book=>{%>
+                        <img height="150" width="100" src="<%=book.coverImagePath%>">
+                    <%})%>
+            <%}%>
+         
+        </div>
+    </div>
+  </div>
+</div>

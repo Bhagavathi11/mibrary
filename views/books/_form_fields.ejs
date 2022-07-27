@@ -1,0 +1,41 @@
+<div class="mb-3 ">
+    <label  class="form-label">Title</label>
+    <input type="text" class="form-control"  name="title" value="<%=book.title%>" >
+</div>
+        
+<div class="mb-3 ">
+    <label  class="form-label">Author</label>
+    <select class="form-select" name="author"aria-label="Default select example">
+        <% authors.forEach(author => { %>
+        <% if(author.id === book.author){%>
+        <option selected label="<%=author.name%>" value="<%=author.id%>"></option>
+        <%} else {%> 
+        <option label="<%=author.name%>" value="<%=author.id%>"></option>
+        <%}%>
+        <%})%>
+    </select>
+</div>
+                    
+<div class="mb-3 ">
+    <label  class="form-label">Publish Date</label>
+    <input type="date"  name="publishDate"  class="form-control"
+    value="<%=book.publishDate == null ? '' : book.publishDate.toISOString().split('T')[0]%>">
+</div>
+                    
+<div class="mb-3 ">
+    <label  class="form-label">Page Count</label>
+    <input type="number" class="form-control" name="pageCount" min="1" value="<%=book.pageCount%>">
+</div>
+
+<div class="mb-3 ">
+    <label  class="form-label">Cover</label>
+    <input type="file" name="cover" class="form-control filepond" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+</div>
+
+<div class="mb-3 ">
+    <label  class="form-label">Description</label>
+    <textarea name="description" class="form-control"><%=book.description%></textarea>
+</div>
+
+            
+            

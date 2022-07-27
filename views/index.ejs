@@ -1,0 +1,22 @@
+
+
+<div class="section ">
+    <h2>Recently Added</h2>
+  
+    <div class="container pd">
+  
+      <div class="card border-primary mb-3 mx-auto" style="max-width: 30rem;">
+        
+  
+          <div class="card-body text-primary">
+            <%books.forEach(book=>{%>
+                <a href="/books/<%=book.id%>">
+                    <img height="150" width="100" src=<%= book.coverImagePath %>>
+                </a>
+            <%})%>
+          </div>
+
+      </div>
+      
+    </div>
+</div>
